@@ -1,81 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="en-CA">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- 
-    - primary meta tags
-  -->
-  <title>Metric Auto Service</title>
-  <meta name="title" content="Metric Auto Service">
+  <!-- Primary SEO -->
+  <title>Metric Auto Service | VW, Audi & Porsche Repair in Ottawa (Since 1996)</title>
+  <meta name="description" content="Metric Auto Service is an Ottawa auto repair shop specializing in Volkswagen, Audi, and Porsche. Trusted European car service since 1996—diagnostics, brakes, engine repairs, tire storage & more." />
+  <meta name="robots" content="index,follow" />
+  <meta name="googlebot" content="index,follow" />
+  <meta name="format-detection" content="telephone=yes" />
 
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://metricautoservice.ca/" />
 
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Mulish&display=swap"
-    rel="stylesheet">
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Metric Auto Service" />
+  <meta property="og:title" content="Metric Auto Service | VW, Audi & Porsche Repair in Ottawa" />
+  <meta property="og:description" content="Specializing in Volkswagen, Audi, and Porsche. Trusted European car service in Ottawa since 1996." />
+  <meta property="og:url" content="https://metricautoservice.ca/" />
+  <!-- TODO: create this image (ideal 1200x630) -->
+  <meta property="og:image" content="https://metricautoservice.ca/assets/images/og-image.jpg" />
 
-  <!-- 
-    - material icon font
-  -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,600,0,0" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Metric Auto Service | VW, Audi & Porsche Repair in Ottawa" />
+  <meta name="twitter:description" content="Trusted European car service in Ottawa since 1996." />
+  <meta name="twitter:image" content="https://metricautoservice.ca/assets/images/og-image.jpg" />
 
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
 
-  <!-- 
-    - preload images
-  -->
-  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
-  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Mulish&display=swap"
+    rel="stylesheet"
+  />
 
+  <!-- Material Icons -->
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,600,0,0"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- Preload key images -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" />
+
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Metric Auto Service",
+    "url": "https://metricautoservice.ca/",
+    "telephone": "+1-613-725-6052",
+    "email": "info@metricautoservice.ca",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "856 Clyde Ave North",
+      "addressLocality": "Ottawa",
+      "addressRegion": "ON",
+      "postalCode": "K1Z 5A2",
+      "addressCountry": "CA"
+    },
+    "areaServed": "Ottawa, ON",
+    "foundingDate": "1996",
+    "knowsAbout": [
+      "Volkswagen repair",
+      "Audi repair",
+      "Porsche repair",
+      "European car service",
+      "Auto diagnostics",
+      "Brake service",
+      "Tire storage"
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Friday",
+        "opens": "08:00",
+        "closes": "15:00"
+      }
+    ],
+    "sameAs": [
+      "https://maps.app.goo.gl/UqxmuWhaw4Xk5AF1A"
+    ]
+  }
+  </script>
 </head>
 
 <body>
 
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header">
+  <!-- HEADER -->
+  <header class="header" role="banner">
     <div class="container">
 
-      <a href="#" class="logo">
-        <img src="./assets/images/logo.png" alt="metric auto service home" style="width: 180px;">
+      <a href="https://metricautoservice.ca/" class="logo" aria-label="Metric Auto Service homepage">
+        <img
+          src="./assets/images/logo.png"
+          alt="Metric Auto Service"
+          width="180"
+          height="90"
+          decoding="async"
+          fetchpriority="high"
+          style="width: 180px;"
+        />
       </a>
 
-      <nav class="navbar" data-navbar>
+      <nav class="navbar" id="primary-navigation" aria-label="Primary" data-navbar>
         <ul class="navbar-list">
-
           <li>
-            <a href="#" class="navbar-link">Home</a>
+            <a href="https://metricautoservice.ca/" class="navbar-link" aria-current="page">Home</a>
           </li>
-
           <li>
             <a href="#services" class="navbar-link">Services</a>
           </li>
-
           <li>
             <a href="#contact" class="navbar-link">Contact</a>
           </li>
-
         </ul>
       </nav>
 
-      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+      <button
+        class="nav-toggle-btn"
+        aria-label="Toggle menu"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+        data-nav-toggler
+      >
         <span class="nav-toggle-icon icon-1"></span>
         <span class="nav-toggle-icon icon-2"></span>
         <span class="nav-toggle-icon icon-3"></span>
@@ -84,221 +150,180 @@
     </div>
   </header>
 
-
-
-
-
-  <main>
+  <main id="main">
     <article>
 
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="hero has-bg-image" aria-label="home" style="background-image: url('./assets/images/hero-bg.jpg')">
+      <!-- HERO -->
+      <section class="hero has-bg-image" aria-label="Metric Auto Service overview"
+        style="background-image: url('./assets/images/hero-bg.jpg')">
         <div class="container">
 
           <div class="hero-content">
-
             <p class="section-subtitle :dark">Serving the Greater Ottawa Region since 1996</p>
 
-            <h1 class="h1 section-title">Specializing in Volkswagen, Audi, and Porsche</h1>
+            <h1 class="h1 section-title">Specializing in Volkswagen, Audi &amp; Porsche</h1>
 
             <p class="section-text">
-              Trusted European‑car auto repair with meticulous workmanship, clear communication, and a warm, personal touch.
+              Trusted European-car auto repair with meticulous workmanship, clear communication, and a warm, personal touch.
             </p>
 
-            <a href="#services" class="btn">
+            <a href="#services" class="btn" aria-label="View our services">
               <span class="span">Our Services</span>
-
-              <span class="material-symbols-rounded">arrow_forward</span>
+              <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
             </a>
-
           </div>
 
           <figure class="hero-banner" style="--width: 1228; --height: 789;">
-            <img src="./assets/images/hero-banner.png" width="1228" height="789" alt="red motor vehicle"
-              class="move-anim">
+            <img
+              src="./assets/images/hero-banner.png"
+              width="1228"
+              height="789"
+              alt="European vehicle serviced at Metric Auto Service in Ottawa"
+              class="move-anim"
+              decoding="async"
+              fetchpriority="high"
+            />
           </figure>
 
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #SERVICE
-      -->
-
-      <section class="section service has-bg-image" id="services" aria-labelledby="service-label"
+      <!-- SERVICE -->
+      <section class="section service has-bg-image" id="services" aria-labelledby="services-title"
         style="background-image: url('./assets/images/service-bg.jpg')">
         <div class="container">
 
-          <p class="section-subtitle :light" id="service-label">Our services</p>
+          <p class="section-subtitle :light">Our services</p>
 
-          <h2 class="h2 section-title">We Provide Great Services For your Vehicle</h2>
+          <h2 class="h2 section-title" id="services-title">European Auto Repair Services</h2>
 
           <ul class="service-list">
 
             <li>
               <div class="service-card">
-
                 <figure class="card-icon">
-                  <img src="./assets/images/services-1.png" width="110" height="110" loading="lazy" alt="Engine Repair">
+                  <img src="./assets/images/services-1.png" width="110" height="110" loading="lazy" decoding="async"
+                    alt="Engine repair service icon" />
                 </figure>
 
                 <h3 class="h3 card-title">Engine Repair</h3>
 
                 <p class="card-text">
-                  Our comprehensive engine repair services ensure your vehicle runs smoothly and efficiently, restoring performance and reliability.
+                  Comprehensive engine diagnosis and repair to restore performance, reliability, and drivability.
                 </p>
-
               </div>
             </li>
 
             <li>
               <div class="service-card">
-
                 <figure class="card-icon">
-                  <img src="./assets/images/services-2.png" width="110" height="110" loading="lazy" alt="Brake Repair">
+                  <img src="./assets/images/services-2.png" width="110" height="110" loading="lazy" decoding="async"
+                    alt="Brake service and repair icon" />
                 </figure>
 
                 <h3 class="h3 card-title">Brake Service and Repair</h3>
 
                 <p class="card-text">
-                   Our expert brake repair services ensure your brakes perform optimally, providing you with peace of mind on the road.
+                  Inspection and repair for confident stopping power—pads, rotors, fluid service, and more.
                 </p>
-
-              
-
               </div>
             </li>
 
             <li>
               <div class="service-card">
-
                 <figure class="card-icon">
-                  <img src="./assets/images/services-3.png" width="110" height="110" loading="lazy" alt="Tire Repair">
+                  <img src="./assets/images/services-3.png" width="110" height="110" loading="lazy" decoding="async"
+                    alt="Tire storage and mounting icon" />
                 </figure>
 
                 <h3 class="h3 card-title">Tire Storage and Mounting</h3>
 
                 <p class="card-text">
-                  Tire storage and mounting services ensure your seasonal tires are safely stored and expertly installed when needed, enhancing vehicle performance and safety.
+                  Tire storage and mounting services keep your seasonal tires safe and ready—installed when you need them.
                 </p>
-
-                
-
               </div>
             </li>
 
             <li>
               <div class="service-card">
-
                 <figure class="card-icon">
-                  <img src="./assets/images/services-4.png" width="110" height="110" loading="lazy"
-                    alt="Battery Repair">
+                  <img src="./assets/images/services-4.png" width="110" height="110" loading="lazy" decoding="async"
+                    alt="Battery check icon" />
                 </figure>
 
                 <h3 class="h3 card-title">Battery Check</h3>
 
                 <p class="card-text">
-                  Battery check services ensure your vehicle's battery is in optimal condition, preventing unexpected failures and extending battery life.
+                  Battery and charging system testing to prevent unexpected failures and extend battery life.
                 </p>
-
-     
-
               </div>
             </li>
 
             <li class="service-banner">
-              <img src="./assets/images/services-5.png" width="646" height="380" loading="lazy" alt="Red Car"
-                class="move-anim">
+              <img src="./assets/images/services-5.png" width="646" height="380" loading="lazy" decoding="async"
+                alt="Red European car at an auto repair shop" class="move-anim" />
             </li>
 
             <li>
               <div class="service-card">
-
                 <figure class="card-icon">
-                  <img src="./assets/images/services-6.png" width="110" height="110" loading="lazy"
-                    alt="Steering Repair">
+                  <img src="./assets/images/services-6.png" width="110" height="110" loading="lazy" decoding="async"
+                    alt="Vehicle diagnostics icon" />
                 </figure>
 
                 <h3 class="h3 card-title">Auto Diagnostic</h3>
 
                 <p class="card-text">
-                  Vehicle issues can be complex. Our expert diagnostics identify problems quickly and accurately, saving you time and money.
+                  Vehicle issues can be complex. Our expert diagnostics identify problems quickly and accurately.
                 </p>
-
-              
-
               </div>
             </li>
 
           </ul>
 
-          <a href="#" class="btn">
-            <span class="span">View All Services</span>
-
-            <span class="material-symbols-rounded">arrow_forward</span>
+          <!-- Better than href="#" for SEO -->
+          <a href="#contact" class="btn" aria-label="Contact Metric Auto Service">
+            <span class="span">Book / Contact Us</span>
+            <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
           </a>
 
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="section about has-before" aria-labelledby="about-label">
+      <!-- ABOUT -->
+      <section class="section about has-before" aria-labelledby="about-title">
         <div class="container">
 
           <figure class="about-banner">
-            <img src="./assets/images/about-banner.png" width="540" height="540" loading="lazy"
-              alt="vehicle repire equipments" class="w-100">
+            <img src="./assets/images/about-banner.png" width="540" height="540" loading="lazy" decoding="async"
+              alt="Auto repair tools and equipment for European vehicle service" class="w-100" />
           </figure>
 
           <div class="about-content">
-
             <p class="section-subtitle :dark">About Us</p>
 
-            <h2 class="h2 section-title">We’re Commited to Meet the quality</h2>
+            <h2 class="h2 section-title" id="about-title">A Trusted Ottawa Auto Shop for European Vehicles</h2>
 
             <p class="section-text">
               From first inspection to final road test, we deliver meticulous work, clear communication, and results you can trust.
             </p>
 
             <ul class="about-list">
-
               <li class="about-item">
-              <p>
-                <strong class="display-1 strong">3</strong> European brands specialized
-              </p>
-            </li>
-
-              <li class="about-item">
-                <p>
-                  <strong class="display-1 strong">5</strong> Google Star Rating
-                </p>
+                <p><strong class="display-1 strong">3</strong> European brands specialized</p>
               </li>
 
               <li class="about-item">
-                <p>
-                  <strong class="display-1 strong">30+</strong> Years in service
-                </p>
+                <p><strong class="display-1 strong">5</strong> Google Star Rating</p>
               </li>
-              
+
               <li class="about-item">
-              <p>
-                <strong class="display-1 strong">5K+</strong> Vehicles serviced
-              </p>
-            </li>
+                <p><strong class="display-1 strong">30+</strong> Years in service</p>
+              </li>
+
+              <li class="about-item">
+                <p><strong class="display-1 strong">5K+</strong> Vehicles serviced</p>
+              </li>
             </ul>
 
           </div>
@@ -306,121 +331,85 @@
         </div>
       </section>
 
+    </article>
+  </main>
 
-
-
-
-      
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer" id="contact">
-
+  <!-- FOOTER -->
+  <footer class="footer" id="contact" role="contentinfo">
     <div class="footer-top section">
       <div class="container">
 
         <div class="footer-brand">
-
-          <a href="#" class="logo">
-            <img src="./assets/images/logo.png" width="128" height="63" alt="metric auto service home">
+          <a href="https://metricautoservice.ca/" class="logo" aria-label="Metric Auto Service homepage">
+            <img src="./assets/images/logo.png" width="128" height="63" loading="lazy" decoding="async" alt="Metric Auto Service logo" />
           </a>
 
           <p class="footer-text">
-            
+            Metric Auto Service is an Ottawa auto repair shop specializing in Volkswagen, Audi, and Porsche. Call or email to book service.
           </p>
-
-          
-
         </div>
 
         <ul class="footer-list">
-
-          <li>
-            <p class="h3">Business Hours</p>
-          </li>
+          <li><p class="h3">Business Hours</p></li>
 
           <li>
             <p class="p">Monday – Thursday</p>
-
             <span class="span">8:00am – 5:00pm</span>
           </li>
-           <li>
-            <p class="p">Friday</p>
 
+          <li>
+            <p class="p">Friday</p>
             <span class="span">8:00am – 3:00pm</span>
           </li>
-
-                
-
         </ul>
 
-        <ul class="footer-list">
+        <ul class="footer-list" aria-label="Contact information">
+          <li><p class="h3">Contact Info</p></li>
 
           <li>
-            <p class="h3">Contact Info</p>
-          </li>
-
-          <li>
-            <a href="tel:+01234567890" class="footer-link">
-              <span class="material-symbols-rounded">call</span>
-
+            <a href="tel:+16137256052" class="footer-link" aria-label="Call Metric Auto Service at 613 725 6052">
+              <span class="material-symbols-rounded" aria-hidden="true">call</span>
               <span class="span">(613) 725-6052</span>
             </a>
           </li>
 
           <li>
-            <a href="mailto:info@metricautoservice.ca" class="footer-link">
-              <span class="material-symbols-rounded">mail</span>
-
+            <a href="mailto:info@metricautoservice.ca" class="footer-link" aria-label="Email Metric Auto Service">
+              <span class="material-symbols-rounded" aria-hidden="true">mail</span>
               <span class="span">info@metricautoservice.ca</span>
             </a>
           </li>
 
           <li>
             <address class="footer-link address">
-              <a href="https://maps.app.goo.gl/UqxmuWhaw4Xk5AF1A" class="footer-link">
-              <span class="material-symbols-rounded">location_on</span>
-
-              <span class="span">856 Clyde Ave North, Ottawa Ontario, K1Z 5A2</span>
-            </a>
+              <span class="material-symbols-rounded" aria-hidden="true">location_on</span>
+              <a href="https://maps.app.goo.gl/UqxmuWhaw4Xk5AF1A" class="footer-link" rel="noopener">
+                <span class="span">856 Clyde Ave North, Ottawa, ON K1Z 5A2</span>
+              </a>
             </address>
           </li>
-
         </ul>
 
       </div>
 
-      <img src="./assets/images/footer-shape-3.png" width="637" height="173" loading="lazy" alt="Shape"
-        class="shape shape-3 move-anim">
-
+      <img src="./assets/images/footer-shape-3.png" width="637" height="173" loading="lazy" decoding="async" alt=""
+        class="shape shape-3 move-anim" />
     </div>
 
     <div class="footer-bottom">
       <div class="container">
+        <p class="copyright">Copyright 2026, Metric Auto Service. All Rights Reserved.</p>
 
-        <p class="copyright">Copyright 2026, Metric Auto Service All Rights Reserved.</p>
+        <img src="./assets/images/footer-shape-2.png" width="778" height="335" loading="lazy" decoding="async" alt=""
+          class="shape shape-2" />
 
-        <img src="./assets/images/footer-shape-2.png" width="778" height="335" loading="lazy" alt="Shape"
-          class="shape shape-2">
-
-        <img src="./assets/images/footer-shape-1.png" width="805" height="652" loading="lazy" alt="Red Car"
-          class="shape shape-1 move-anim">
-
+        <img src="./assets/images/footer-shape-1.png" width="805" height="652" loading="lazy" decoding="async"
+          alt="European vehicle illustration" class="shape shape-1 move-anim" />
       </div>
     </div>
-
   </footer>
 
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
+  <!-- JS -->
+  <script src="./assets/js/script.js" defer></script>
 </body>
-
 </html>
