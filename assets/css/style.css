@@ -1257,4 +1257,16 @@ body {
 
   .footer-top .container { padding-inline-start: 20%; }
 
+  /* Override all the % width rules with a capped responsive width */
+  .hero-banner img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    /* grows with viewport, but never gets ridiculous */
+    width: clamp(320px, 45vw, 1080px);
+    max-width: 1080px;
+
+    height: auto;
+    object-fit: contain;
 }
