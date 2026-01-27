@@ -1229,8 +1229,8 @@ body {
     right: 0;
 
     /* grows with viewport, but never gets ridiculous */
-    width: clamp(320px, 45vw, 1080px);
-    max-width: 1080px;
+    width: clamp(320px, 45vw, 1440px);
+    max-width: 1440px;
 
     height: auto;
     object-fit: contain;
