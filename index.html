@@ -15,20 +15,102 @@
   <!-- Canonical -->
   <link rel="canonical" href="https://metricautoservice.ca/" />
 
+  <!-- Structured Data (WebSite + AutoRepair) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://metricautoservice.ca/#website",
+        "name": "Metric Auto Service",
+        "url": "https://metricautoservice.ca/"
+      },
+      {
+        "@type": "AutoRepair",
+        "@id": "https://metricautoservice.ca/#autorepair",
+        "name": "Metric Auto Service",
+        "url": "https://metricautoservice.ca/",
+        "description": "Ottawa auto repair shop specializing in Volkswagen, Audi, and Porsche. European car service since 1996.",
+        "telephone": "+1-613-725-6052",
+        "email": "info@metricautoservice.ca",
+
+        "image": [
+          "https://metricautoservice.ca/assets/images/og-image.jpg",
+          "https://metricautoservice.ca/assets/images/logo.png"
+        ],
+
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "856 Clyde Ave North",
+          "addressLocality": "Ottawa",
+          "addressRegion": "ON",
+          "postalCode": "K1Z 5A2",
+          "addressCountry": "CA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 45.37724,
+          "longitude": -75.74925
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Ottawa"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"],
+            "opens": "08:00",
+            "closes": "17:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Friday",
+            "opens": "08:00",
+            "closes": "15:00"
+          }
+        ],
+        "knowsAbout": [
+          "Volkswagen repair",
+          "Audi repair",
+          "Porsche repair",
+          "European car service",
+          "Auto diagnostics",
+          "Brake service",
+          "Tire storage"
+        ],
+
+        "sameAs": [
+          "https://maps.app.goo.gl/UqxmuWhaw4Xk5AF1A"
+        ],
+
+        "mainEntityOfPage": {
+          "@id": "https://metricautoservice.ca/"
+        }
+      }
+    ]
+  }
+  </script>
+
   <!-- Open Graph / Social -->
+  <meta property="og:locale" content="en_CA" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Metric Auto Service" />
   <meta property="og:title" content="Metric Auto Service | VW, Audi &amp; Porsche Repair in Ottawa" />
   <meta property="og:description" content="Specializing in Volkswagen, Audi, and Porsche. Trusted European car service in Ottawa since 1996." />
   <meta property="og:url" content="https://metricautoservice.ca/" />
-  <!-- TODO: create this image (ideal 1200x630) -->
   <meta property="og:image" content="https://metricautoservice.ca/assets/images/og-image.jpg" />
+  <meta property="og:image:alt" content="Metric Auto Service — European Auto repair in Ottawa" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="534" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Metric Auto Service | VW, Audi &amp; Porsche Repair in Ottawa" />
-  <meta name="twitter:description" content="Trusted European car service in Ottawa since 1996." />
+  <meta name="twitter:description" content="Specializing in Volkswagen, Audi, and Porsche. Trusted European car service in Ottawa since 1996." />
   <meta name="twitter:image" content="https://metricautoservice.ca/assets/images/og-image.jpg" />
+  <meta name="twitter:image:alt" content="Metric Auto Service — European Auto repair in Ottawa" />
 
   <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -58,67 +140,8 @@
   <!-- Preload key images -->
   <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
   <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" />
-
-  <!-- WebSite Schema (helps Google choose a Site name in search results) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Metric Auto Service",
-    "alternateName": "Metric Auto",
-    "url": "https://metricautoservice.ca/"
-  }
-  </script>
-
-  <!-- Local Business Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "AutoRepair",
-    "name": "Metric Auto Service",
-    "url": "https://metricautoservice.ca/",
-    "telephone": "+1-613-725-6052",
-    "email": "info@metricautoservice.ca",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "856 Clyde Ave North",
-      "addressLocality": "Ottawa",
-      "addressRegion": "ON",
-      "postalCode": "K1Z 5A2",
-      "addressCountry": "CA"
-    },
-    "areaServed": "Ottawa, ON",
-    "foundingDate": "1996",
-    "knowsAbout": [
-      "Volkswagen repair",
-      "Audi repair",
-      "Porsche repair",
-      "European car service",
-      "Auto diagnostics",
-      "Brake service",
-      "Tire storage"
-    ],
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"],
-        "opens": "08:00",
-        "closes": "17:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Friday",
-        "opens": "08:00",
-        "closes": "15:00"
-      }
-    ],
-    "sameAs": [
-      "https://maps.app.goo.gl/UqxmuWhaw4Xk5AF1A"
-    ]
-  }
-  </script>
+  
 </head>
-
 <body>
 
   <!-- HEADER -->
@@ -287,7 +310,7 @@
                     alt="Vehicle diagnostics icon" />
                 </figure>
 
-                <h3 class="h3 card-title">Auto Diagnostic</h3>
+                <h3 class="h3 card-title">Auto Diagnostics</h3>
 
                 <p class="card-text">
                   Vehicle issues can be complex. Our expert diagnostics identify problems quickly and accurately.
@@ -297,7 +320,6 @@
 
           </ul>
 
-          <!-- Better than href="#" for SEO -->
           <a href="#contact" class="btn" aria-label="Contact Metric Auto Service">
             <span class="span">Book / Contact Us</span>
             <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
