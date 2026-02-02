@@ -150,6 +150,13 @@ body {
   background-position: left;
 }
 
+/* iPhone-ish portrait widths */
+@media (max-width: 800px) {
+  .hero.has-bg-image {
+    background-position: calc(0% - 50px) center;
+  }
+}
+
 .section-subtitle {
   max-width: max-content;
   font-family: var(--ff-chakra-petch);
@@ -233,7 +240,7 @@ body {
   border-color: var(--white);
 }
 
-.move-anim { animation: moving 2s ease-in-out infinite alternate; }
+. { animation: moving 2s ease-in-out infinite alternate; }
 
 @keyframes moving {
   0% { transform: translateY(0); }
@@ -1230,4 +1237,5 @@ body {
     height: auto;
     object-fit: contain;
   }
+
 }
